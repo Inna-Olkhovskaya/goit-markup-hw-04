@@ -1,12 +1,13 @@
 :root {
   --brand-color: #757575;
-  /* --brand-background: #f5f5f5; */
+  --brand-background-main: #ffffff;
+  --brand-background-second: #f5f5f5;
   --brand-accent: #2196f3;
   --projects-set-gap: 30px;
 }
 body {
   font-family: Roboto, sans-serif;
-  background-color: var(--brand-background);
+  background-color: var(--brand-background-main);
   color: var(--brand-color);
 }
 .container {
@@ -23,7 +24,7 @@ body {
 }
 header {
   border-bottom: 1px solid #ececec;
-  background-color: #ffffff;
+  background-color: var(--brand-background-main);
 }
 .main-nav {
   display: flex;
@@ -63,6 +64,9 @@ header {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.site-nav .link.current {
+  color: var(--brand-accent);
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--brand-accent);
@@ -93,12 +97,24 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  align-items: center;
   /* outline: 2px solid tomato; */
 }
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--brand-accent);
 }
+/* .contact-tel::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../images/smartphone.svg);
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-size: contain;
+} */
+
+
 /*Hero studio */
 h1,
 h2,
@@ -126,10 +142,10 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero.jpg);
+  background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -140,7 +156,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--brand-background-main);
   width: 696px;
   margin-right: auto;
   margin-left: auto;
@@ -161,7 +177,7 @@ img {
 }
 .hero-button:focus,
 .hero-button:hover {
-  color: #ffffff;
+  color: var(--brand-background-main);
   background-color: var(--brand-accent);
 }
 .section {
@@ -174,7 +190,6 @@ img {
   padding-bottom: 0;
 }
 .visually-hidden {
-  /* color: var(--brand-background); */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -197,15 +212,14 @@ img {
 .special-list .special-item:last-child {
   margin-right: 0;
 }
-/* .special-item::befor {
-  display: inline-block;
+.special-item > .special-list::befor {
   content: "";
-  width: 270px;
+  width: inherit;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-   outline: 2px solid tomato;
-} */
+  outline: 2px solid tomato;
+}
 .special-title {
   font-weight: 700;
   font-size: 14px;
@@ -260,11 +274,9 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .person-card {
   padding: 30px 0px;
 }
-
 .person-name {
   font-weight: 500;
   font-size: 16px;
@@ -280,6 +292,38 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.person-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 32px 0px;
+  /* outline: 2px solid tomato; */
+}
+.social-item:not(:first-child) {
+  margin-left: 10px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  background: var(--brand-background-main);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--brand-background-main);
+}
+.social-link:hover,
+.social-link:focus {
+  background: var(--brand-accent);
+}
+
 /* Portfolio */
 /* List of filters button */
 .button-list {
@@ -413,4 +457,31 @@ footer {
 .location-tel .link:hover,
 .location-tel .link:focus {
   color: var(--brand-accent);
+}
+
+.footer-box {
+  align-items: baseline;
+  height: 80px;
+
+  outline: 2px solid tomato;
+}
+.footer-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  outline: 2px solid tomato;
+}
+.footer-list {
+  list-style: none;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  outline: 2px solid rgb(6, 84, 84);
+}
+.footer-item {
 }
