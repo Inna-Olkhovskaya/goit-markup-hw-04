@@ -114,7 +114,6 @@ header {
   background-size: contain;
 } */
 
-
 /*Hero studio */
 h1,
 h2,
@@ -212,14 +211,24 @@ img {
 .special-list .special-item:last-child {
   margin-right: 0;
 }
-.special-item > .special-list::befor {
+/* .special-item > .special-list::befor {
   content: "";
   width: inherit;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  outline: 2px solid tomato;
+  } */
+
+.special-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
+
 .special-title {
   font-weight: 700;
   font-size: 14px;
@@ -324,6 +333,28 @@ img {
   background: var(--brand-accent);
 }
 
+/*Our clients */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item {
+  border-width: 1px;
+  border-color: rgba(175, 177, 184, 1);
+  border-style: solid;
+  padding: 16px 32px;
+}
+.clients-item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients-icon::hover {
+  fill: var(--brand-accent);
+}
+.clients-item:hover {
+  border-color: var(--brand-accent);
+}
+
 /* Portfolio */
 /* List of filters button */
 .button-list {
@@ -399,6 +430,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--brand-color);
 }
+
 /*Footer with address & contacts */
 footer {
   background-color: #2f303a;
@@ -473,15 +505,21 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   outline: 2px solid tomato;
 }
-.footer-list {
+.footer-social {
   list-style: none;
   height: 44px;
   margin: 0;
   padding: 0;
   outline: 2px solid rgb(6, 84, 84);
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 .footer-item {
+  /* background-color: #2F303A; */
 }
