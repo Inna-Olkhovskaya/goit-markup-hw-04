@@ -76,6 +76,8 @@ header {
   display: flex;
   margin-left: auto;
 }
+.contact-item {
+}
 .contact-mail {
   text-decoration: none;
   font-weight: 500;
@@ -89,6 +91,21 @@ header {
 .contact-mail:hover,
 .contact-mail:focus {
   color: var(--brand-accent);
+}
+
+.icon-button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px 0 0;
+  border-style: none;
+  color: var(--brand-color);
+  background-color: var(--brand-background-main);
+}
+.icon-mail {
+  /* margin-right: 10px; */
+}
+.icon-button:hover {
+  fill: var(--brand-accent);
 }
 .contact-tel {
   text-decoration: none;
@@ -407,7 +424,6 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .border {
   border: 1px solid rgba(238, 238, 238, 1);
   padding: 20px 24px;
@@ -430,7 +446,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--brand-color);
 }
-
 /*Footer with address & contacts */
 footer {
   background-color: #2f303a;
@@ -457,7 +472,6 @@ footer {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
 .location-mail {
   margin-top: 9px;
 }
@@ -477,7 +491,6 @@ footer {
 .location-tel {
   margin-top: 9px;
 }
-
 .location-tel .link {
   text-decoration: none;
   font-style: normal;
@@ -494,7 +507,7 @@ footer {
 .footer-box {
   align-items: baseline;
   height: 80px;
-
+  
   outline: 2px solid tomato;
 }
 .footer-text {
@@ -505,9 +518,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+
   outline: 2px solid tomato;
 }
 .footer-social {
@@ -515,11 +526,30 @@ footer {
   height: 44px;
   margin: 0;
   padding: 0;
-  outline: 2px solid rgb(6, 84, 84);
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+
+  outline: 2px solid rgb(6, 84, 84);
 }
 .footer-item {
-  /* background-color: #2F303A; */
+}
+.footer-link {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--brand-accent);
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--brand-background-main);
+}
+.footer-social .footer-item:not(:last-child) {
+  margin-right: 10px;
 }
