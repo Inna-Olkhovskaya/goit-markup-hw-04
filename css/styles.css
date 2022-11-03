@@ -76,9 +76,7 @@ header {
   display: flex;
   margin-left: auto;
 }
-.contact-item {
-}
-.contact-mail {
+.contact-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -86,50 +84,17 @@ header {
   letter-spacing: 0.02em;
   color: var(--brand-color);
   margin-right: 50px;
-  /* outline: 2px solid tomato; */
-}
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--brand-accent);
-}
-
-.icon-button {
-  cursor: pointer;
-  padding: 0;
-  margin: 0 10px 0 0;
-  border-style: none;
-  color: var(--brand-color);
-  background-color: var(--brand-background-main);
-}
-.icon-mail {
-  /* margin-right: 10px; */
-}
-.icon-button:hover {
-  fill: var(--brand-accent);
-}
-.contact-tel {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--brand-color);
+  display: flex;
   align-items: center;
-  /* outline: 2px solid tomato; */
 }
-.contact-tel:hover,
-.contact-tel:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--brand-accent);
 }
-/* .contact-tel::before {
-  display: inline-block;
-  content: "";
-  background-image: url(../images/smartphone.svg);
+.contact-icon {
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-size: contain;
-} */
+  fill: currentColor;
+}
 
 /*Hero studio */
 h1,
@@ -507,7 +472,7 @@ footer {
 .footer-box {
   align-items: baseline;
   height: 80px;
-  
+
   outline: 2px solid tomato;
 }
 .footer-text {
@@ -540,6 +505,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--brand-background-main);
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -548,7 +514,7 @@ footer {
 .footer-icon {
   width: 20px;
   height: 20px;
-  fill: var(--brand-background-main);
+  fill: currentColor;
 }
 .footer-social .footer-item:not(:last-child) {
   margin-right: 10px;
