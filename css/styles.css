@@ -288,6 +288,7 @@ img {
 .social-link {
   width: 44px;
   height: 44px;
+  color: #afb1b8;
   background: var(--brand-background-main);
   border-radius: 50%;
   display: flex;
@@ -297,14 +298,12 @@ img {
 .social-icon {
   width: 20px;
   height: 20px;
-}
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--brand-background-main);
+  fill: currentColor;
 }
 .social-link:hover,
 .social-link:focus {
   background: var(--brand-accent);
+  color: var(--brand-background-main);
 }
 
 /*Our clients */
@@ -313,21 +312,28 @@ img {
   display: flex;
   justify-content: center;
 }
-.clients-item {
-  border-width: 1px;
-  border-color: rgba(175, 177, 184, 1);
-  border-style: solid;
+.clients-link {
+  display: flex;
+  align-items: center;
+  color:  #afb1b8;;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   padding: 16px 32px;
 }
 .clients-item:not(:first-child) {
   margin-left: 30px;
 }
-.clients-icon::hover {
-  fill: var(--brand-accent);
+
+.clients-icon {
+  fill: currentColor;
 }
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--brand-accent);
-}
+  color: var(--brand-accent)
+  }
 
 /* Portfolio */
 /* List of filters button */
