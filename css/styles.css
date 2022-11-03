@@ -468,6 +468,7 @@ footer {
 }
 
 .footer-box {
+  display: inline-block;
   align-items: baseline;
   height: 80px;
 
@@ -481,6 +482,8 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
+
 
   outline: 2px solid tomato;
 }
