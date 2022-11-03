@@ -315,7 +315,7 @@ img {
 .clients-link {
   display: flex;
   align-items: center;
-  color:  #afb1b8;;
+  color: #afb1b8;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -332,8 +332,8 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--brand-accent);
-  color: var(--brand-accent)
-  }
+  color: var(--brand-accent);
+}
 
 /* Portfolio */
 /* List of filters button */
@@ -468,12 +468,15 @@ footer {
 }
 
 .footer-box {
-  display: inline-block;
-  align-items: baseline;
-  height: 80px;
+  display: flex;
 
   outline: 2px solid tomato;
 }
+.wrap-social {
+  height: 80px;
+  margin-left: 70px;
+  align-items: baseline;
+ }
 .footer-text {
   font-style: normal;
   font-weight: 700;
@@ -483,9 +486,6 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-
-
-  outline: 2px solid tomato;
 }
 .footer-social {
   list-style: none;
@@ -493,8 +493,6 @@ footer {
   margin: 0;
   padding: 0;
   display: flex;
-
-  outline: 2px solid rgb(6, 84, 84);
 }
 .footer-item {
 }
