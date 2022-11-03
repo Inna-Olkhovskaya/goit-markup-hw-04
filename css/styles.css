@@ -193,15 +193,7 @@ img {
 .special-list .special-item:last-child {
   margin-right: 0;
 }
-/* .special-item > .special-list::befor {
-  content: "";
-  width: inherit;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  } */
-
-.special-link {
+.special-icon {
   display: flex;
   align-items: center;
   justify-content: center;
