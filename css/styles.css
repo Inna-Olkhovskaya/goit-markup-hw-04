@@ -469,14 +469,14 @@ footer {
 
 .footer-box {
   display: flex;
-
-  outline: 2px solid tomato;
+  align-items: baseline;
+  /* outline: 2px solid tomato; */
 }
 .wrap-social {
   height: 80px;
   margin-left: 70px;
   align-items: baseline;
- }
+}
 .footer-text {
   font-style: normal;
   font-weight: 700;
@@ -493,8 +493,6 @@ footer {
   margin: 0;
   padding: 0;
   display: flex;
-}
-.footer-item {
 }
 .footer-link {
   width: 44px;
